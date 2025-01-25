@@ -155,8 +155,8 @@ In this image, the network scan displays the following information:
 ![alt text](img/wifibind.png)
 
 ### Sniffer 
-The ESP32 sniffs Wi-Fi frames effectively!
 
+The ESP32 sniffs Wi-Fi frames effectively!
 ![alt text](img/sniffer.png)
 
 ### ARP scan
@@ -169,5 +169,5 @@ Ping command
 ```ping  [-W <t>] [-i <t>] [-s <n>] [-c <n>] [-Q <n>] [-T <n>] [-I <n>] <host>```
 ![alt text](img/ping.png)
 
-# Author
+## Author
 - Eun0us
