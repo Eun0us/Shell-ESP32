@@ -1,36 +1,37 @@
 | Supported Targets | ESP32 |
 -----------------------------
 
-# Command - ESP_SHELL
+## Overview
+
+ESPILON is a shell interface for ESP32 that supports various commands for system management, Wi-Fi operations, and debugging. This project provides a prebuilt binary and a guide for building the firmware from source using ESP-IDF.
+
 ## Compilation 
 
-Le code a déjà été build (pour un esp32 devkit), vous pouvez simplement flasher le binaire avec la commande 
+The code has already been built (for an ESP32 DevKit), and you can simply flash the binary using the following commands:
 ```
-# Methode 1
+# Method 1
 idf.py flash
 
-# Méthode 2
+# Méthod 2
 pip install esptool
 esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 build/espilon.bin
 ```
-
-Sinon si vous voulez le recompilez vous même en modifiant les path hardcoder dans main/idf_component.yml
-Pluggez votre esp32 
+If you want to recompile it yourself while modifying hardcoded paths in main/idf_component.yml, connect your ESP32 and run the following commands:
 ```
 idf.py fullclean
 idf.py build 
 idf.py flash && idf.py monitor
 ```
-Checkez le path dans idfconfig dans le dossier main afin d'y mettre vos path 
-
+Check the paths in *idfconfig* within the main folder and update them accordingly:
 
 ```
 idf.py menuconfig
-Activer UART
+Enable UART
 CONFIG_ESP_CONSOLE_UART_DEFAULT
 ```
 
 ## Command
+Helper
 
 ```
 striker:> help
@@ -141,36 +142,32 @@ help  [<string>]
 
 ```
 
-### Join 
-Sur cette image on vois que j'utilise la commande join tel que 
-join <ssid> <pass>
-Connection init
-Event esp_netif_handlers attribution dhcp dans le réseaux
-
+### Connect 
+In this image, the join command is used as follows:
+`join <ssid> <pass>`
+The connection initializes with the event *esp_netif_handlers*, assigning a DHCP lease in the network.
 ![alt text](img/wifi_join.png)
 
-### scan-wifi
-Sur cette image on vois qu'un scan de réseaux a été effectuer il nous donne les infomations suivante
-```<SSID BSSID RSSI AUTHMODE CHANNEL>``` 
+### WiFi-scanner
+In this image, the network scan displays the following information:
+`<SSID BSSID RSSI AUTHMODE CHANNEL>` 
 
 ![alt text](img/wifibind.png)
 
 ### Sniffer 
-L'esp32 sniff vraiment bien !
+The ESP32 sniffs Wi-Fi frames effectively!
 
 ![alt text](img/sniffer.png)
 
-### scan-arp
-Scan arp return il my LAN 192.168.1.0/24
+### ARP scan
 
+The ARP scan returns devices on my LAN 192.168.1.0/24.
 ![alt text](img/arp_response.png)
 
 ### Ping
 Ping command
 ```ping  [-W <t>] [-i <t>] [-s <n>] [-c <n>] [-Q <n>] [-T <n>] [-I <n>] <host>```
 ![alt text](img/ping.png)
-
-
 
 # Author
 - Eun0us
