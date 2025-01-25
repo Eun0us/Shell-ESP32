@@ -148,7 +148,12 @@ In this image, the join command is used as follows:
 The connection initializes with the event *esp_netif_handlers*, assigning a DHCP lease in the network.
 ![alt text](img/wifi_join.png)
 
-### WiFi-scanner
+### WiFi-scanner & Sniffer 
+
+The ESP32 sniffs Wi-Fi frames effectively!
+![alt text](img/sniffer.png)
+
+
 In this image, the network scan displays the following information:
 `<SSID BSSID RSSI AUTHMODE CHANNEL>` 
 
