@@ -1,0 +1,37 @@
+dependencies:
+  cmd_arpscan:
+    dependencies: []
+    source:
+      path: /home/marouane/esp-shell/components/cmd_arpscan
+      type: local
+    version: '*'
+  cmd_nvs:
+    dependencies: []
+    source:
+      path: /home/marouane/esp-shell/components/cmd_nvs
+      type: local
+    version: '*'
+  cmd_system:
+    dependencies: []
+    source:
+      path: /home/marouane/esp-shell/components/cmd_system
+      type: local
+    version: '*'
+  cmd_wifi:
+    dependencies: []
+    source:
+      path: /home/marouane/esp-shell/components/cmd_wifi
+      type: local
+    version: '*'
+  idf:
+    source:
+      type: idf
+    version: 5.3.2
+direct_dependencies:
+- cmd_arpscan
+- cmd_nvs
+- cmd_system
+- cmd_wifi
+manifest_hash: 1d8d9ab32c34823f674363e6a9b8f8a674b96c7f243ac40fa191f64132a05429
+target: esp32
+version: 2.0.0
