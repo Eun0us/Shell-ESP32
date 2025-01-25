@@ -154,20 +154,22 @@ In this image, the network scan displays the following information:
 
 ![alt text](img/wifibind.png)
 
-### Sniffer 
-
-The ESP32 sniffs Wi-Fi frames effectively!
-![alt text](img/sniffer.png)
-
 ### ARP scan
 
 The ARP scan returns devices on my LAN 192.168.1.0/24.
 ![alt text](img/arp_response.png)
 
+### Sniffer 
+
+The ESP32 sniffs Wi-Fi frames effectively!
+![alt text](img/sniffer.png)
+
 ### Ping
 Ping command
 ```ping  [-W <t>] [-i <t>] [-s <n>] [-c <n>] [-Q <n>] [-T <n>] [-I <n>] <host>```
 ![alt text](img/ping.png)
+
+
 
 ## Author
 - Eun0us
