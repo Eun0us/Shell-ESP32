@@ -19,8 +19,7 @@ esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 
 If you want to recompile it yourself while modifying hardcoded paths in main/idf_component.yml, connect your ESP32 and run the following commands:
 ```
 idf.py fullclean
-idf.py build 
-idf.py flash && idf.py monitor
+idf.py build flash monitor
 ```
 Check the paths in *idfconfig* within the main folder and update them accordingly:
 

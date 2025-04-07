@@ -1,9 +1,0 @@
-dependencies:
-  cmd_system:
-    path: /esp-shell/components/cmd_system
-  cmd_nvs:
-    path: /esp-shell/components/cmd_nvs
-  cmd_wifi:
-    path: /esp-shell/components/cmd_wifi
-  cmd_arpscan:
-    path: /esp-shell/components/cmd_arpscan
