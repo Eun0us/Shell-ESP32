@@ -36,6 +36,7 @@ CONFIG_ESP_CONSOLE_UART_DEFAULT
 ## Command
 **Helper**
 
+```
 striker:> help
 free 
   Get the current size of free heap memory
