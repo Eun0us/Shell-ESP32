@@ -12,7 +12,7 @@ This project provides a prebuilt binary and a guide for building the firmware fr
 
 Require **ESP-IDF** (idf.py)
 
-###Active bluetooth in menuconfig 
+### Active bluetooth in menuconfig 
 
 `idf.py menuconfig`
 
@@ -32,12 +32,10 @@ Component Config -> Enable UART -> CONFIG_ESP_CONSOLE_UART_DEFAULT
 idf.py menuconfig
 Enable UART
 CONFIG_ESP_CONSOLE_UART_DEFAULT
-```
 
 ## Command
-Helper
+**Helper**
 
-```
 striker:> help
 free 
   Get the current size of free heap memory
