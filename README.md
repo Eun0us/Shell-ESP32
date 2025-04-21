@@ -7,6 +7,10 @@ ESPILON is a shell interface for ESP32 that supports various commands for system
 This project provides a prebuilt binary and a guide for building the firmware from source using ESP-IDF.
 
 
+## NEW ADD
+
+Proxy + Srv Proxy
+
 
 ## Build
 
@@ -67,6 +71,14 @@ ping  [-W <t>] [-i <t>] [-s <n>] [-c <n>] [-Q <n>] [-T <n>] [-I <n>] <host>
 scan-arp 
   Please Be connect to start this command
 
+proxy_start  <host> <port>
+  Start Proxy OPEN a tcp server
+        <host>  Host address to manage proxy 
+        <port>  Port associated 
+
+proxy_stop 
+  Deconnect Proxy from u r server
+
 help  [<string>]
   Print the summary of all registered commands if no arguments are given,
   otherwise print summary of given command.
@@ -100,7 +112,12 @@ Ping command
 ```ping  [-W <t>] [-i <t>] [-s <n>] [-c <n>] [-Q <n>] [-T <n>] [-I <n>] <host>```
 ![alt text](img/ping.png)
 
+### Proxy 
+Proxy commands
+`proxy_start <host> <port>`</br>
+`proxy_stop` Disconnect client</br>
 
-
-## Author
+![alt text](img/proxy.png.png)
+![alt text](img/response_proxy.png)
+# Author
 - Eun0us

@@ -19,6 +19,7 @@
 //#include "cmd_nvs.h"
 #include "arpscan.h"
 #include "ping.h"
+#include "proxy.h"
 //#include "cmd_ble.h"
 
 #define PROMPT_STR CONFIG_IDF_TARGET
@@ -53,7 +54,8 @@ void app_main(void)
     module_scan_wifi();
     module_ping();
     module_arp_scan();
-
+    module_proxy_start();
+    module_proxy_stop();
     //register_sniffer_ble();
     //register_nvs();
 
