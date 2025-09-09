@@ -4,7 +4,7 @@
 extern "C" {
 #endif
 
-// Register WiFi functions
+// Register ARP scan func
 void module_arp_scan(void);
 
 #ifdef __cplusplus

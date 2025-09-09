@@ -16,11 +16,11 @@
 #include "nvs_flash.h"
 #include "cmd_system.h"
 #include "cmd_wifi.h"
-//#include "cmd_nvs.h"
 #include "arpscan.h"
-#include "ping.h"
-#include "proxy.h"
+#include "network.h"
+
 //#include "cmd_ble.h"
+//#include "cmd_nvs.h"
 
 #define PROMPT_STR CONFIG_IDF_TARGET
 
@@ -49,13 +49,12 @@ void app_main(void)
     esp_console_register_help_command();
 
     register_system_common();
-    module_wifi();
+    register_join_wifi_cmd();
     module_sniff_wif();
     module_scan_wifi();
     module_ping();
     module_arp_scan();
-    module_proxy_start();
-    module_proxy_stop();
+    module_proxy();
     //register_sniffer_ble();
     //register_nvs();
 

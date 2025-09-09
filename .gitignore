@@ -1,0 +1,16 @@
+/venv
+
+# === Firmware build artifacts ===
+build/ 
+
+firmwares/**/build/
+ 
+
+firmwares/**/sdkconfig.old
+ 
+
+firmwares/**/sdkconfig
+ 
+managed_components
+
+.vscode
